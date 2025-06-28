@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Learning Roadmap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -40px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #3b82f6;
+            z-index: 1;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 28px;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background: #3b82f6;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-blue-600 to-indigo-900 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center mb-10">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a5e30026-21ac-4af5-8ebd-ef48bf48223f.png" alt="Digital illustration of a futuristic education concept with glowing brain circuit and laptop floating in space" class="rounded-lg shadow-xl floating">
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Computer Science Learning Roadmap</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Silabus agak mirip dengan standar Universitas BINUS dengan sumber belajar yang otodidak</p>
+            <button class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-blue-50 transition duration-300">Start Learning</button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-6 py-16">
+        <!-- Introduction -->
+        <section class="mb-20">
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-3xl font-bold mb-4 text-blue-800">About This Roadmap</h2>
+                <p class="text-lg mb-6"> Jalur pembelajaran komprehensif ini mencakup semua topik mendasar dalam Ilmu Komputer, yang terstruktur hampir serupa dengan kurikulum Universitas BINUS. (Tapi buat bisa jadi spesialis tingkat lanjut harus tetap belajar otodidak alias explotasi sendiri) </p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <div class="text-blue-600 mb-4"><i class="fas fa-graduation-cap text-4xl"></i></div>
+                        <h3 class="font-bold text-lg mb-2">Curriculum Aligned</h3>
+                        <p>Dipetakan ke struktur program Ilmu Komputer BINUS dan hasil pembelajaran</p>
+                    </div>
+                    <div class="bg-indigo-50 p-6 rounded-lg">
+                        <div class="text-indigo-600 mb-4"><i class="fas fa-book-open text-4xl"></i></div>
+                        <h3 class="font-bold text-lg mb-2">Verified Resources</h3>
+                        <p>Materi pembelajaran berkualitas tinggi dari sumber terpercaya</p>
+                    </div>
+                    <div class="bg-purple-50 p-6 rounded-lg">
+                        <div class="text-purple-600 mb-4"><i class="fas fa-road text-4xl"></i></div>
+                        <h3 class="font-bold text-lg mb-2">Flexible Path</h3>
+                        <p>Dapat disesuaikan dengan kecepatan belajar dan tujuan karier kam</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap Timeline -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-10 text-center text-blue-800">Learning Roadmap Timeline</h2>
+            <div class="relative timeline pl-16">
+                <!-- Year 1 -->
+                <div class="relative mb-12 timeline-item">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="absolute -left-16 top-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
+                        <h3 class="text-2xl font-bold mb-4 text-blue-600">Smester 1 dan 2</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="card bg-white border border-gray-200 rounded-lg p-6 transition duration-300">
+                                <h4 class="font-bold mb-3"><i class="fas fa-code text-blue-500 mr-2"></i>Programming Basics</h4>
+                                <ul class="list-disc pl-5 space-y-2">
+                                    <li>Introduction to Programming (Python)</li>
+                                    <li>Algorithmic Thinking</li>
+                                    <li>Basic Data Structures</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <h5 class="font-bold text-sm mb-2">Resources:</h5>
+                                    <ul class="space-y-1">
+                                        <li><a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" class="text-blue-600 hover:underline">CS50: Intro to CS (Chtome kan dah bisa auto translate)</a></li>
+                                        <li><a href="https://www.youtube.com/watch?v=DQfvftz-fEI&list=PLCZlgfAG0GXCiejEEd7gaL3_Y7bSjCvbd" class="text-blue-600 hover:underline">Python for Everybody</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card bg-white border border-gray-200 rounded-lg p-6 transition duration-300">
+                                <h4 class="font-bold mb-3"><i class="fas fa-square-root-alt text-green-500 mr-2"></i>Discrete Math</h4>
+                                <ul class="list-disc pl-5 space-y-2">
+                                    <li>Logic and Proofs</li>
+                                    <li>Set Theory</li>
+                                    <li>Combinatorics</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <h5 class="font-bold text-sm mb-2">Resources:</h5>
+                                    <ul class="space-y-1">
+                                        <li><a href="https://youtube.com/playlist?list=PLwoUmsPvQR0EiDeSp6E_Pjm8vf_J5k48y&si=wtXdEAX19nvMUSsO" class="text-blue-600 hover:underline">Discrete Mathematics</a></li>
+                                        <li><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/" class="text-blue-600 hover:underline">Math for CS (Chtome kan dah bisa auto translate)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Year 2 -->
+                <div class="relative mb-12 timeline-item">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="absolute -left-16 top-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
+                        <h3 class="text-2xl font-bold mb-4 text-blue-600">Semester 3 dan 4</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="card bg-white border border-gray-200 rounded-lg p-6 transition duration-300">
+                                <h4 class="font-bold mb-3"><i class="fas fa-database text-purple-500 mr-2"></i>Data Structures & Algorithms</h4>
+                                <ul class="list-disc pl-5 space-y-2">
+                                    <li>Arrays, Linked Lists, Trees</li>
+                                    <li>Sorting and Searching</li>
+                                    <li>Algorithm Analysis</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <h5 class="font-bold text-sm mb-2">Resources:</h5>
+                                    <ul class="space-y-1">
+                                   </ul>
+                                </div>
+                            </div>
+                            <div class="card bg-white border border-gray-200 rounded-lg p-6 transition duration-300">
+                                <h4 class="font-bold mb-3"><i class="fas fa-microchip text-blue-500 mr-2"></i>Computer Systems</h4>
+                                <ul class="list-disc pl-5 space-y-2">
+                                    <li>Computer Organization</li>
+                                    <li>Operating Systems</li>
+                                    <li>Networking Basics</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <h5 class="font-bold text-sm mb-2">Resources:</h5>
+                                    <ul class="space-y-1">
+                                   </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              <!-- Year 3 -->
+                <div class="relative mb-12 timeline-item">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="absolute -left-16 top-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
+                        <h3 class="text-2xl font-bold mb-4 text-blue-600">Smester 5 dan 6</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="card bg-white border border-gray-200 rounded-lg p-6 transition duration-300">
+                                <h4 class="font-bold mb-3"><i class="fas fa-brain text-indigo-500 mr-2"></i>Artificial Intelligence</h4>
+                                <ul class="list-disc pl-5 space-y-2">
+                                    <li>Machine Learning Fundamentals</li>
+                                    <li>Neural Networks</li>
+                                    <li>Natural Language Processing</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <h5 class="font-bold text-sm mb-2">Resources:</h5>
+                                    <ul class="space-y-1">
+                                   </ul>
+                                </div>
+                            </div>
+                             </div>
+                            <div class="card bg-white border border-gray-200 rounded-lg p-6 transition duration-300">
+                                <h4 class="font-bold mb-3"><i class="fas fa-wifi text-green-500 mr-2"></i>Internet of Things</h4>
+                                <ul class="list-disc pl-5 space-y-2">
+                                    <li>Embedded Systems</li>
+                                    <li>IoT Protocols</li>
+                                    <li>Smart Device Development</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <h5 class="font-bold text-sm mb-2">Resources:</h5>
+                                    <ul class="space-y-1">
+                                      </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Year 4 -->
+                <div class="relative timeline-item">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="absolute -left-16 top-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl">4</div>
+                        <h3 class="text-2xl font-bold mb-4 text-blue-600">Smester 7 dan 8</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="card bg-white border border-gray-200 rounded-lg p-6 transition duration-300">
+                                <h4 class="font-bold mb-3"><i class="fas fa-code-branch text-purple-500 mr-2"></i>Tech Stack Deep Dive</h4>
+                                <ul class="list-disc pl-5 space-y-2">
+                                    <li>Full Stack Development</li>
+                                    <li>Cloud Computing</li>
+                                    <li>DevOps Practices</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <h5 class="font-bold text-sm mb-2">Resources:</h5>
+                                    <ul class="space-y-1">
+                                <!--        <li><a href="https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd0044" class="text-blue-600 hover:underline">Full Stack Nanodegree (Udacity)</a></li>
+                                        <li><a href="https://www.coursera.org/specializations/cloud-computing" class="text-blue-600 hover:underline">Cloud Computing (Coursera)</a></li>
+                                   --> </ul>
+                                </div>
+                            </div>
+                            <div class="card bg-white border border-gray-200 rounded-lg p-6 transition duration-300">
+                                <h4 class="font-bold mb-3"><i class="fas fa-project-diagram text-red-500 mr-2"></i>Capstone Project</h4>
+                                <ul class="list-disc pl-5 space-y-2">
+                                    <li>Industry Project</li>
+                                    <li>Research Paper</li>
+                                    <li>Startup Development</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <h5 class="font-bold text-sm mb-2">Resources:</h5>
+                                    <ul class="space-y-1">
+                               <!--         <li><a href="https://www.coursera.org/project-networks" class="text-blue-600 hover:underline">Project Management (Coursera)</a></li>
+                                        <li><a href="https://leanstack.com" class="text-blue-600 hover:underline">Lean Startup Methodology</a></li>
+                                  -->  </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+   <h2 class="text-2xl font-bold mb-2">Terserah ja mau di pake apa kada</h2>
+                    <p class="text-gray-400">tapi klo emang di pakai trus smester 1 ama 2 nya udah bilang ja biar ku up smester 3 sama 4 nya</p>
+                </div>
+  </footer>
+   <script>
+        // Simple animation for cards on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.transition = 'all 0.5s ease';
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                observer.observe(card);
+            });
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
