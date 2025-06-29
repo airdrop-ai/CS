@@ -7,6 +7,52 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+
+    @media (max-width: 768px) {
+        .timeline-item {
+            margin-left: 0; /* Remove left margin for mobile */
+            padding: 0; /* Remove padding for mobile */
+        }
+
+        .timeline::before {
+            left: 20px; /* Adjust the timeline line position */
+        }
+
+        .timeline-item::before {
+            left: 10px; /* Adjust the timeline item circle position */
+        }
+
+        .card {
+            margin-bottom: 20px; /* Add space between cards */
+        }
+
+        h1 {
+            font-size: 2.5rem; /* Adjust heading size */
+        }
+
+        h2 {
+            font-size: 2rem; /* Adjust subheading size */
+        }
+
+        h3 {
+            font-size: 1.5rem; /* Adjust section heading size */
+        }
+
+        h4 {
+            font-size: 1.25rem; /* Adjust card heading size */
+        }
+
+        p {
+            font-size: 1rem; /* Adjust paragraph size */
+        }
+
+
+        .container {
+            padding-left: 20px; /* Add padding for mobile */
+            padding-right: 20px; /* Add padding for mobile */
+        }
+    }
+        
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
         
         body {
@@ -113,8 +159,12 @@
                                 <div class="mt-4">
                                     <h5 class="font-bold text-sm mb-2">Resources:</h5>
                                     <ul class="space-y-1">
-                                        <li><a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" class="text-blue-600 hover:underline">CS50: Intro to CS (Chtome kan dah bisa auto translate)</a></li>
-                                        <li><a href="https://www.youtube.com/watch?v=DQfvftz-fEI&list=PLCZlgfAG0GXCiejEEd7gaL3_Y7bSjCvbd" class="text-blue-600 hover:underline">Python for Everybody</a></li>
+                                        <hr>
+                                        <li><a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" class="text-blue-600 hover:underline">1. CS50: Intro to CS (Chtome kan dah bisa auto translate)</a></li>
+                                        <hr>
+                                        <br>
+                                        <li><a href="https://www.youtube.com/watch?v=DQfvftz-fEI&list=PLCZlgfAG0GXCiejEEd7gaL3_Y7bSjCvbd" class="text-blue-600 hover:underline">2.Python for Everybody</a></li>
+                                        <hr>
                                     </ul>
                                 </div>
                             </div>
@@ -128,8 +178,12 @@
                                 <div class="mt-4">
                                     <h5 class="font-bold text-sm mb-2">Resources:</h5>
                                     <ul class="space-y-1">
-                                        <li><a href="https://youtube.com/playlist?list=PLwoUmsPvQR0EiDeSp6E_Pjm8vf_J5k48y&si=wtXdEAX19nvMUSsO" class="text-blue-600 hover:underline">Discrete Mathematics</a></li>
-                                        <li><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/" class="text-blue-600 hover:underline">Math for CS (Chtome kan dah bisa auto translate)</a></li>
+                                        <hr>
+                                        <li><a href="https://youtube.com/playlist?list=PLwoUmsPvQR0EiDeSp6E_Pjm8vf_J5k48y&si=wtXdEAX19nvMUSsO" class="text-blue-600 hover:underline">1.Discrete Mathematics</a></li>
+                                        <hr>
+                                        <br>
+                                        <li><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/" class="text-blue-600 hover:underline">2.Math for CS (Chtome kan dah bisa auto translate)</a></li>
+                                        <hr>
                                     </ul>
                                 </div>
                             </div>
